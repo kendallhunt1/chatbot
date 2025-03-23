@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <!-- Coding Preference -->
+    <category>
+        <pattern>CODING</pattern>
+        <template>Cool, software development’s a big deal! Do you enjoy front-end stuff—like designing websites—or back-end, like making systems work? Please choose between "front end" or "back end".</template>
+    </category>
+    
+    <category>
+        <pattern>PROGRAMMING</pattern>
+        <template><srai>CODING</srai></template>
+    </category>
+    
+    <category>
+        <pattern>SOFTWARE DEVELOPMENT</pattern>
+        <template><srai>CODING</srai></template>
+    </category>
+    
+    <category>
+        <pattern>DEVELOPMENT</pattern>
+        <template><srai>CODING</srai></template>
+    </category>
+    
+    <category>
+        <pattern>SOFTWARE</pattern>
+        <template><srai>CODING</srai></template>
+    </category>
+    
+    <!-- Follow up to CODING user response -->
+    <category>
+        <pattern>FRONT END</pattern>
+        <template>You’d rock as a Web Developer! You’d build websites with HTML, CSS, and JavaScript. Look into internships to get started. Want to hear about another job? Please answer with "Yes" or "No".</template>
+    </category>
+    
+    <category>
+        <pattern>BACK END</pattern>
+        <template>Software Developer might be your fit! You’d code apps or systems with languages like Python or Java. Check out GitHub projects to practice. Another job interest? Please answer with "Yes" or "No".</template>
+    </category>
+    
+    <!-- Data Preference -->
+    <category>
+        <pattern>DATA</pattern>
+        <template>Data’s awesome! You could be a Data Scientist—analyzing trends with Python or R. Learn some stats and you’re set. Want more options? Please answer with "More" or "No".</template>
+    </category>
+    
+    <!-- Security Preference -->
+    <category>
+        <pattern>SECURITY</pattern>
+        <template>Cybersecurity Analyst could be perfect! You’d protect systems from hackers—think problem-solving with a security twist. Certifications like CompTIA Security+ help. More ideas? Please answer with "Yes" or "No".</template>
+    </category>
+    
+    <category>
+        <pattern>CYBERSECURITY</pattern>
+        <template><srai>SECURITY</srai></template>
+    </category>
+    
+    <category>
+        <pattern>CYBER SECURITY</pattern>
+        <template><srai>SECURITY</srai></template>
+    </category>
+    
+    <!-- Systems Preference -->
+    <category>
+        <pattern>SYSTEMS</pattern>
+        <template>Systems Analyst might suit you! You’d design IT solutions—part tech, part strategy. Try shadowing a pro to see it in action. Another career? Please answer with "Yes" or "No".</template>
+    </category>
+    
+    <category>
+        <pattern>OPERATING SYSTEMS</pattern>
+        <template><srai>SYSTEMS</srai></template>
+    </category>
+    
+    <!-- Follow-Up -->
+    <category>
+        <pattern>MORE</pattern>
+        <template>How about something different—do you like coding, data, security, or systems?</template>
+    </category>
+    
+    <category>
+        <pattern>NO</pattern>
+        <template>Okay, thank you! Initiate another conversation if you need anything else!</template>
+    </category>
+    
+    <!-- Responses for each career, triggered by the follow-up -->
+    <category>
+        <pattern>WHAT DOES A SOFTWARE DEVELOPER DO</pattern>
+        <template>
+            A Software Developer builds applications or systems—like mobile apps or business software—using languages like Python or Java. It’s all about coding and solving problems creatively. Would you like to hear about other jobs? Please reply with "Yes" or "No".
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WHAT DOES A BACK END DEVELOPER DO</pattern>
+        <template><srai>WHAT DOES A SOFTWARE DEVELOPER DO</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT DOES A WEB DEVELOPER DO</pattern>
+        <template>
+            A Web Developer creates websites, working on the front-end—like the design you see—with HTML and CSS, or the back-end—like databases—with PHP or JavaScript. It’s perfect if you love coding visuals! Would you like to hear about other jobs? Please reply with "Yes" or "No".
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WHAT DOES A FRONT END DEVELOPER DO</pattern>
+        <template><srai>WHAT DOES A WEB DEVELOPER DO</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT DOES A DATA SCIENTIST DO</pattern>
+        <template>
+            A Data Scientist digs into data to find trends—like predicting sales—using tools like Python, R, and SQL. It’s a mix of stats and coding. Would you like to hear about other jobs? Please reply with "Yes" or "No".
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WHAT DOES A CYBERSECURITY ANALYST DO</pattern>
+        <template>
+            A Cybersecurity Analyst protects systems from hackers, setting up firewalls and spotting threats. It’s great for problem-solvers who like a challenge. Would you like to hear about other jobs? Please reply with "Yes" or "No".
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WHAT DOES A CYBER SECURITY ANALYST DO</pattern>
+        <template><srai>WHAT DOES A CYBERSECURITY ANALYST DO</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT DOES A SECURITY ANALYST DO</pattern>
+        <template><srai>WHAT DOES A CYBERSECURITY ANALYST DO</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT DOES A SYSTEMS ANALYST DO</pattern>
+        <template>
+            A Systems Analyst designs and improves IT systems—like a company’s network—blending tech skills with strategy. It’s ideal if you enjoy optimizing things. Would you like to hear about other jobs? Please reply with "Yes" or "No".
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WHAT DOES A OPERATING SYSTEMS ANALYST DO</pattern>
+        <template><srai>WHAT DOES A SYSTEMS ANALYST DO</srai></template>
+    </category>
+
+    <!-- Fallback for unrecognized jobs -->
+    <category>
+        <pattern>WHAT DOES A * DO</pattern>
+        <template>
+            Hmm, I don’t have that job in my list. Try one like "Software Developer," "Web Developer," "Data Scientist," "Cybersecurity Analyst," or "Systems Analyst"!
+        </template>
+    </category>
+    
+</aiml>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    
+    <!-- Catch-all for unmatched inputs -->
+    <category>
+        <pattern>*</pattern>
+        <template>I’m not sure what you mean, but let’s start fresh—say "Hi" to begin exploring computing careers!</template>
+    </category>
+    
+    <category>
+        <pattern>HI</pattern>
+        <template>Hello! I’m CareerGuideBot, here to help you find a computing career that fits you. Want to start by telling me what you enjoy in computer science?</template>
+    </category>
+    
+    <!-- Redirect common greetings to HI -->
+    <category>
+        <pattern>HEY</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    <category>
+        <pattern>HELLO</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    <category>
+        <pattern>HOLA</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    <category>
+        <pattern>YO</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HOW ARE YOU</pattern>
+        <template>Hello! I am a chatbot. I don't experience any emotions. But, I do specialize in helping people in IT find a career that fits them. Would you like to try? Reply with "Yes" or "No".</template>
+    </category>
+    
+    <category>
+        <pattern>WHAT IS YOUR NAME</pattern>
+        <template>I’m CareerGuideBot—your career advisor for computing jobs! Ready to explore your options?</template>
+    </category>
+    
+    <category>
+        <pattern>YES</pattern>
+        <template>Great! Do you like coding a lot—like building apps or websites—or are you more into analyzing data or securing systems?</template>
+    </category>
+    
+    <category>
+        <pattern>BYE</pattern>
+        <template>Good luck with your career hunt! Come back anytime.</template>
+    </category>
+    
+    <category>
+        <pattern>END</pattern>
+        <template><srai>BYE</srai></template>
+    </category>
+    
+</aiml>
